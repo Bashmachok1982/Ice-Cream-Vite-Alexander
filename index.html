@@ -1,125 +1,1093 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/Ice-Cream-Vite-Alexander/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+    <meta
+      name="description"
+      content="A large variety of natural ice cream with many locations in different parts of the US"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400..800&family=Seymour+One&display=swap"
+      rel="stylesheet"
+    />
+    <title>IceCream</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <script type="module" crossorigin src="/Ice-Cream-Vite-Alexander/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/Ice-Cream-Vite-Alexander/assets/index-DvPDDfy5.css">
+    <link rel="stylesheet" crossorigin href="/Ice-Cream-Vite-Alexander/assets/index-8e-4XNvP.css">
   </head>
   <body>
     <header class="header">
-  <div class="container">
-    <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="img/sprite.svg#logo"></use>
+  <div class="container header-container">
+    <svg class="header-logo" width="41" height="37" aria-label="Logo">
+      <use href="/Ice-Cream-Vite-Alexander/assets/logo-mGtnT6In.svg#icon-logo"></use>
+    </svg>
+    <nav class="header-nav">
+      <ul class="header-nav-list">
+        <li><a class="header-nav-link" href="#products">Our products</a></li>
+        <li><a class="header-nav-link" href="#feedbacks">Feedbacks</a></li>
+        <li><a class="header-nav-link" href="#contacts">Contact & Location</a></li>
+      </ul>
+    </nav>
+    <button class="burger-open-menu-btn" type="button">
+      <svg class="burger-icon" width="41" height="37" aria-label="Open menu" title="Open menu">
+        <use href="/Ice-Cream-Vite-Alexander/assets/sprite-zdbH9N6f.svg#icon-burger"></use>
+      </svg>
+    </button>
+    <button class="button-primary buy-btn open-buy-modal" type="button">
+      Buy now
+      <svg class="btn-icon" width="12" height="12">
+        <use href="/Ice-Cream-Vite-Alexander/assets/sprite-zdbH9N6f.svg#icon-btn-chevron-right"></use>
+      </svg>
+    </button>
+  </div>
+  <div class="burger-menu">
+    <div class="burger-menu-header">
+      <svg class="logo-svg" width="41" height="37" aria-label="Logo">
+        <use href="/Ice-Cream-Vite-Alexander/assets/logo-mGtnT6In.svg#icon-logo"></use>
+      </svg>
+      <button class="close-burger-menu-btn" type="button" aria-label="Close menu">
+        <svg class="close-burger-menu-icon" width="12" height="12">
+          <use href="/Ice-Cream-Vite-Alexander/assets/sprite-zdbH9N6f.svg#icon-menu-close"></use>
         </svg>
-      </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
+      </button>
+    </div>
+    <nav class="burger-menu-nav">
+      <ul class="burger-menu-nav-list">
+        <li class="burger-menu-nav-item">
+          <a class="burger-menu-nav-link" href="index.html">Home</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
+        <li class="burger-menu-nav-item">
+          <a class="burger-menu-nav-link" href="#advantages">How it’s made?</a>
+        </li>
+        <li class="burger-menu-nav-item">
+          <a class="burger-menu-nav-link" href="#products">Our products</a>
+        </li>
+        <li class="burger-menu-nav-item">
+          <a class="burger-menu-nav-link" href="#feedbacks">Feedbacks</a>
+        </li>
+        <li class="burger-menu-nav-item">
+          <a class="burger-menu-nav-link" href="#contacts">Contact</a>
         </li>
       </ul>
     </nav>
+    <button class="button-primary burger-menu-buy-btn open-buy-modal" type="button">
+      Buy now
+      <svg class="btn-icon" width="12" height="12">
+        <use href="/Ice-Cream-Vite-Alexander/assets/sprite-zdbH9N6f.svg#icon-btn-chevron-right"></use>
+      </svg>
+    </button>
   </div>
 </header>
 
 
     <main>
-      <!-- Loads the specified .html file -->
-      <section class="vite-promo">
-  <div class="container">
-    <div class="vite-promo-thumb">
-      <a
-        class="vite-promo-link"
-        href="https://vitejs.dev/"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="Link to Vite official website"
-        title="Vite.js  build tool"
-      >
-        <!-- Path to images as from index.html file -->
-        <img
-          class="pic"
-          src="img/vite-logo.png"
-          alt="Vite logo"
-          width="640"
-          height="640"
-        />
-      </a>
+      <section class="hero">
+  <div class="container hero-container">
+    <div class="hero-content-first-wrapper">
+      <h1 class="section-title hero-title">
+        <span class="first-part-hero-title">ice cream made with</span>
+        <span class="second-part-hero-title">passion</span>
+      </h1>
+      <div class="hero-anchor-btn-link-wrapper">
+        <a href="#products" class="button-secondary hero-anchor-btn-link"
+          >Products</a
+        >
+        <a href="#advantages" class="hero-anchor-link">How it’s made?</a>
+      </div>
+      <div class="hero-action-call-wrapper">
+        <div class="hero-action-call-img-wrapper">
+          <picture>
+            <source
+              srcset="/Ice-Cream-Vite-Alexander/assets/plate-desktop-1x-BWRn2GyK.webp 1x, /Ice-Cream-Vite-Alexander/assets/plate-desktop-2x-C175BO3O.webp 2x"
+              media="(min-width: 1200px)"
+            />
+            <source
+              srcset="/Ice-Cream-Vite-Alexander/assets/plate-tablet-1x-DqjunP_3.webp 1x, /Ice-Cream-Vite-Alexander/assets/plate-tablet-2x-wphf9Wi4.webp 2x"
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="/img/plate-mobile-1x.webp 1x, /img/plate-mobile-2x.webp 2x"
+              media="(max-width: 767px)"
+            />
+            <img
+              src="/img/plate-mob-1x.webp"
+              loading="lazy"
+              alt="A plate full of ice cream scoops"
+              width="170"
+            />
+          </picture>
+        </div>
+        <div class="hero-action-call-text-link-wrapper">
+          <p class="hero-action-call-text">
+            Choose your favourite product and enjoy its flavour
+          </p>
+          <a href="#products" class="hero-action-call-link">
+            <svg
+              class="icon-arrow hero-action-call-link-icon"
+              aria-label="Go to the products section"
+            >
+              <use href="/Ice-Cream-Vite-Alexander/assets/sprite-zdbH9N6f.svg#icon-arrow"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
     </div>
-    <h1 class="main-title">
-      <span class="main-title-gradient">Vite</span>
-      Template by
-      <a
-        class="main-title-link"
-        href="https://github.com/goitacademy/vanilla-app-template"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT
-      </a>
-    </h1>
+    <div class="hero-content-second-wrapper">
+      <div class="hero-ice-cream-img-wrapper">
+        <img
+          srcset="/Ice-Cream-Vite-Alexander/assets/smiled-ice-cream-1x-DUWA9sEo.webp 1x, /Ice-Cream-Vite-Alexander/assets/smiled-ice-cream-1x-DUWA9sEo.webp 2x"
+          fetchpriority="high"
+          decoding="async"
+          alt="Ice Cream that has a smiley face"
+          width="152"
+        />
+      </div>
+      <div class="statics-descr-wrapper">
+        <p class="statics-descr">
+          <span class="statics-number">16</span>
+          <span class="statics-text">cafes</span>
+        </p>
+        <p class="statics-descr">
+          <span class="statics-number">23</span>
+          <span class="statics-text">food trucks</span>
+        </p>
+      </div>
+    </div>
   </div>
 </section>
 
-      <article class="badges">
+      <section class="products" id="products">
   <div class="container">
-    <ul class="badges-list">
-      <li class="badges-item">
-        <a
-          class="badges-link"
-          href="https://www.npmjs.com/package/vite-plugin-html-inject"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          HTML Inject
-        </a>
+    <p class="title-text">100% natural</p>
+    <h2 class="section-title">products</h2>
+
+    <ul class="products-list">
+      <li class="product-item one">
+        <picture class="product-img">
+          <source
+            srcset="/img/products-webp/products-item1-desk-1x.webp 1x, /img/products-webp/products-item1-desk-2x.webp 2x"
+            media="(min-width: 1200px)"
+          />
+          <source
+            srcset="/Ice-Cream-Vite-Alexander/assets/products-item1-tab-1x-C0nGVAIB.webp 1x, /Ice-Cream-Vite-Alexander/assets/products-item1-tab-2x-CZg-d_Oq.webp 2x"
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="/img/products-webp/products-item1-mob-1x.webp 1x, /img/products-webp/products-item1-mob-2x.webp 2x"
+            media="(max-width: 767px)"
+          />
+          <img src="/img/products-webp/products-item1-mob-1x.webp" alt="ice cream" />
+        </picture>
+
+        <div class="product-circle"></div>
+
+        <div class="product-card">
+          <div class="product-name-descr">
+            <h3 class="product-name">ice cream</h3>
+            <p class="product-descr">
+              Soft ice cream with a delicate taste. Made with milk, cream, sugar and natural
+              stabilizer
+            </p>
+          </div>
+
+          <button
+            class="product-btn"
+            type="button"
+            title="Choose ingredients"
+            aria-label="Open the ingredients window"
+          >
+            <svg class="icon-arrow">
+              <use href="/Ice-Cream-Vite-Alexander/assets/sprite-zdbH9N6f.svg#icon-arrow"></use>
+            </svg>
+          </button>
+        </div>
       </li>
-      <li class="badges-item">
-        <a
-          class="badges-link"
-          href="https://www.npmjs.com/package/vite-plugin-full-reload"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Full Reload
-        </a>
+
+      <li class="product-item two">
+        <picture class="product-img">
+          <source
+            srcset="/img/products-webp/products-item2-desk-1x.webp 1x, /img/products-webp/products-item2-desk-2x.webp 2x"
+            media="(min-width: 1200px)"
+          />
+          <source
+            srcset="/Ice-Cream-Vite-Alexander/assets/products-item2-tab-1x-xIA-qSwT.webp 1x, /Ice-Cream-Vite-Alexander/assets/products-item2-tab-2x-DRZCMfdo.webp 2x"
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="/img/products-webp/products-item2-mob-1x.webp 1x, /img/products-webp/products-item2-mob-2x.webp 2x"
+            media="(max-width: 767px)"
+          />
+          <img src="/img/products-webp/products-item2-mob-1x.webp" alt="ice coffee" />
+        </picture>
+
+        <div class="product-circle"></div>
+
+        <div class="product-card">
+          <div class="product-name-descr">
+            <h3 class="product-name">ice coffee</h3>
+            <p class="product-descr">
+              Fragrant invigorating drink created from 100% natural ingredients without the use of
+              preservatives and flavor enhancers
+            </p>
+          </div>
+
+          <button
+            class="product-btn"
+            type="button"
+            title="Choose ingredients"
+            aria-label="Open the ingredients window"
+          >
+            <svg class="icon-arrow">
+              <use href="/Ice-Cream-Vite-Alexander/assets/sprite-zdbH9N6f.svg#icon-arrow"></use>
+            </svg>
+          </button>
+        </div>
       </li>
-      <li class="badges-item">
-        <a
-          class="badges-link"
-          href="https://www.npmjs.com/package/postcss-sort-media-queries"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Sort Media Queries
-        </a>
+
+      <li class="product-item three">
+        <picture class="product-img">
+          <source
+            srcset="/img/products-webp/products-item3-desk-1x.webp 1x, /img/products-webp/products-item3-desk-2x.webp 2x"
+            media="(min-width: 1200px)"
+          />
+          <source
+            srcset="/Ice-Cream-Vite-Alexander/assets/products-item3-tab-1x-_KkSuRG7.webp 1x, /Ice-Cream-Vite-Alexander/assets/products-item3-tab-2x-BanMyaYi.webp 2x"
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="/img/products-webp/products-item3-mob-1x.webp 1x, /img/products-webp/products-item3-mob-2x.webp 2x"
+            media="(max-width: 767px)"
+          />
+          <img src="/img/products-webp/products-item3-mob-1x.webp" alt="milkshakes" />
+        </picture>
+
+        <div class="product-circle"></div>
+
+        <div class="product-card">
+          <div class="product-name-descr">
+            <h3 class="product-name">milkshakes</h3>
+            <p class="product-descr">
+              Sweet drinks based on milk and ice cream, supplemented with syrups, fruits, berries
+              and other sweets of your choice
+            </p>
+          </div>
+
+          <button
+            class="product-btn"
+            type="button"
+            title="Choose ingredients"
+            aria-label="Open the ingredients window"
+          >
+            <svg class="icon-arrow">
+              <use href="/Ice-Cream-Vite-Alexander/assets/sprite-zdbH9N6f.svg#icon-arrow"></use>
+            </svg>
+          </button>
+        </div>
       </li>
     </ul>
   </div>
-</article>
+</section>
+
+      <section class="advantages" id="advantages">
+  <div class="container advantages-container">
+    <div class="advantages-heading-wrapper">
+      <h2 class="section-title advantages-title">
+        How <br />
+        it's <br />
+        made?
+      </h2>
+      <h3 class="advantages-subtitle">Tradition and love</h3>
+    </div>
+    <div class="advantages-content">
+      <div class="advantages-img-wrapper">
+        <picture>
+          <source
+            srcset="img/advantages-webp/advantages-desk-1x.webp 1x, img/advantages-webp/advantages-desk-2x.webp 2x"
+            media="(min-width: 1200px)"
+          />
+          <source
+            srcset="img/advantages-webp/advantages-tab-1x.webp 1x, img/advantages-webp/advantages-tab-2x.webp 2x"
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="img/advantages-webp/advantages-mob-1x.webp 1x, img/advantages-webp/advantages-mob-2x.webp 2x"
+            media="(max-width: 767px)"
+          />
+          <img
+            class="advantages-img"
+            src="img/advantages-webp/advantages-mob-1x.webp"
+            alt="Корова на лугу"
+          />
+        </picture>
+      </div>
+      <div class="advantages-content-block">
+        <div class="advantages-text-wrapper">
+          <p class="advantages-text advantages-text-large">
+            Ice is a place where you will become not only a little happier, but also healthier.
+            Health is the main value for us, and we follow it when creating our handmade desserts.
+          </p>
+          <p class="advantages-text">
+            We use traditional recipes and 100% natural ingredients. Our products are so natural
+            that they can be given to children from the age of three years. Sweets lovers can expect
+            55 types of ice cream, 15 types of coffee and 23 milkshakes.
+          </p>
+          <p class="advantages-text advantages-text-hidden">
+            This is enough to choose ice cream and coffee for any mood!
+          </p>
+        </div>
+        <button class="button-primary advantages-btn" type="button">
+          Read more
+          <svg class="btn-icon" width="12" height="12">
+            <use href="/Ice-Cream-Vite-Alexander/assets/sprite-zdbH9N6f.svg#icon-btn-chevron-right"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <ul class="advantages-list">
+      <li class="advantages-item">
+        <svg width="36" height="36">
+          <use href="/Ice-Cream-Vite-Alexander/assets/sprite-zdbH9N6f.svg#icon-cow"></use>
+        </svg>
+        <div class="advantages-item-text-wrapper">
+          <h4 class="advantages-item-title">721</h4>
+          <p class="advantages-item-description">
+            Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
+          </p>
+        </div>
+      </li>
+      <li class="advantages-item">
+        <svg width="36" height="36">
+          <use href="/Ice-Cream-Vite-Alexander/assets/sprite-zdbH9N6f.svg#icon-weight"></use>
+        </svg>
+        <div class="advantages-item-text-wrapper">
+          <h4 class="advantages-item-title">16kg</h4>
+          <p class="advantages-item-description">
+            Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
+          </p>
+        </div>
+      </li>
+      <li class="advantages-item">
+        <svg width="36" height="36">
+          <use href="/Ice-Cream-Vite-Alexander/assets/sprite-zdbH9N6f.svg#icon-ice-crema"></use>
+        </svg>
+        <div class="advantages-item-text-wrapper">
+          <h4 class="advantages-item-title">84</h4>
+          <p class="advantages-item-description">
+            Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
+          </p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+      <section class="feedbacks" id="feedbacks">
+  <div class="container feedbacks-container">
+    <h2 class="visually-hidden">Feedbacks</h2>
+    <div class="feedbacks-img-wrapper">
+      <picture>
+        <source
+          media="(min-width: 1200px)"
+          srcset="/img/feedbacks-webp/fb1-img-desk-1x.webp 1x, /img/feedbacks-webp/fb1-img-desk-2x.webp 2x" />
+        <source
+          media="(min-width: 768px)"
+          srcset="/img/feedbacks-webp/fb1-img-tab-1x.webp 1x, /img/feedbacks-webp/fb1-img-tab-2x.webp 2x" />
+        <source
+          media="(max-width: 767px)"
+          srcset="/img/feedbacks-webp/fb1-img-mob-1x.webp 1x, /img/feedbacks-webp/fb1-img-mob-2x.webp 2x" />
+        <img
+          src="/img/feedbacks-webp/fb1-img-mob-1x.webp"
+          alt="A variety of delicious ice cream"
+          loading="lazy"
+      /></picture>
+    </div>
+    <ul class="feedbacks-list">
+      <li class="feedbacks-item fb-item-slider-animation active">
+        <div class="fb-user-img-wrapper">
+          <img
+            srcset="data:image/webp;base64,UklGRowFAABXRUJQVlA4IIAFAACwGwCdASpVAFUAPpFAmUglpDChKBVeMhASCWIAxrBpEQFQjJdG+ln/UbvrnTdPDgYHVubOapXJ5tCy6eR7/H71vqjbr0wOmvCbptggDnz83A9vZzNS0DUJYigW9dFhl/88FvMTFdxZOle6+wj9tUmpsX9Q5kT/To+/kg+4ejX4ouM408QoBRFve0B19hOk0JljX+M/19ZpGlIPJMxHTtda1k3LrTpiwYZ3npIiCU+lcyY80nns7PDhaacWeJtSE8+6yofkfiLyhopt5gWL2cah33eKSWqw9ywguu+8A49YE+FZNTb4GAD+4HctyuLH3DKr/V/eD1KDTxhp5YzPhwsoZIQIANTorv/A6p0Oif/Rn1JMMCdXlAcDGnimFgR/QBlODd/C25o0DAOhB3779nt/xoD0TcNS0CFwWn3XbpNnh1SCBn7RP6IZAz2CQ0KGOdAzCxVHyXZ0CYscDNOhdbKGlIpMFJz0AoKf9Z3BwldGD4OuMvu6wGg3273KhqAcyxPQLOnl/+cTb12OvzIAb13TcVBHvzccJy6wC9oSaQfRp5VVR0SUwNY2N2bd9YKxYJMT/IPxpFzz6loVXrY/DVdn0zx7tJkqTCsITLvUGkeewndZeWBLFH8xtLR+60q0koccKLNuwC+9bOqNFGFaOHfYyvoDGvdDVEf/u3gXN7cdDtJWcohdOFefG73zhLnOp8YwCOBIC7Dp4uRiRnK6f6CNyNuLdg9K8QTCvwdsUDOX87Ojijp+rX7K2hl5HM//ta+62aEk+yHnGDkVDu38NyWHMTsHjpzDKuWl6UuHkSwMdzbXLDD8mz0p2WjATj15xTzyFzCZbfoA0Bgyk52J7XGlWcXOIgNIzn7T66HYV5/I37C+I8Bv+pEGZKxBsuVNljlGGR3YMtQTHgiJGS+LCVHxMQjpRtNBw8va11U//jxwXWEPCa4NE1pRP4gk/n0fBqNHu/Em1LvNVukhTKJvZgPmDZE+wTy6SRc6a+cF1AN4WA1Du5iVGJ9LrYYNyxfn2cpxNbbKjzujrh+N3b8xZxqocGytGXqMP2Pdl9twV763M8C1gcR05p4rm8RrmzuZUwCKsG18zHfG4orPgBhto/5EAV5Kr2th3uTnRuArkrC8vbxlaY31ZZlhNLeuOikGeJe58vtpWMMG3aaA/L2S2VwxXdbvnI3Kv8Z9RHNkx+WIXQhDLqJD88HtuxE/8Mf5s8t9cXBAM6vLDZs196o+c0zaqLNuuDYr+hU8slBwMfOFx/gJH4gChRAoWcXRu2nKc41QC7lrHmN4rmxajKbcNX32PPXG+b/qSor7gKarS4VR/kPrWWQBdZkpa+pyL3S4Gp38ae75KnY3kOYFDIsWZnNvQW7YPIs7Ie6QY1A00ByN28o2y9aZ0Atk1JfROmK5TqyvtwLZT4stfx7tPN8SnjvWqyXDBCl1CBWkMtE23Mh6VrnUDiJkV5fkqbx1wUjuxLi6QIbPWnkxEZRxx6cK3Fhy2qmeNYprfRMrpyqA/dnxuoVkHdpGpqrQeQyf/+C+YHyFiSKOzwXGuT8qzn5HJCV1FJ+nQK7/NKOFDfOyJ0x6MRE8NamW4wj8NEL4lRckvQkq7AsFwlc+GyBmYXvcjmyK3AREtASxJ/LlAc26SdDyo1aYu9QBbz/usL0NuE7gEYygP1yPAoDEbA+m42thauCM4CiwkG0lPehhgOjl3OzoNVyf4HwE/wAK/iBUit4fh2yGsLCK9gHlxJ3DkHHzxc4WtPxTuPf5SVeUxRp28h0OjWpWtE6YzVHkSkfhC+/mPJRvJPfCH1olibp2vOeEr7/ugw5pvt9Lu2Doih8h1jxMt8aNs4SzrzAejFXE/6qX3LYCaDmgx5x6qCK/IWcwAAAA 1x, /Ice-Cream-Vite-Alexander/assets/fb-user1-2x-BzjleCk8.webp 2x"
+            alt="customer Emily"
+            width="85"
+            height="85"
+            loading="lazy"
+          />
+        </div>
+        <p class="fb-item-text">
+          I love visiting your cafe. You prepare the most delicious ice cream in Los Angeles! In
+          addition, you have beautiful serving, cozy atmosphere and polite staff.
+        </p>
+        <p class="fb-item-description">Emily, Los Angeles</p>
+      </li>
+      <li class="feedbacks-item">
+        <div class="fb-user-img-wrapper">
+          <img
+            srcset="data:image/webp;base64,UklGRngGAABXRUJQVlA4IGwGAAAwHQCdASpVAFUAPpE8mUkloyIhKrVcULASCWYAynBaqH82OzN8EQDb09Em2e8wHms/7D1u9EJ6rHoIdM3P6G8jfTuTmQ8I+N7xIfs3RId7l84uu16X1neMH0BZIQgady6BXSuksOLjs3Bb4i037mTMx4P4uDCSqMkwT7wIWs91n8gAi9JUrdxTCgQUDaprDlmv/b36i77ZNc4033cWyjVA7h/SmTSWZkNbJWaLiuEGoce6lQTlizkrg1zJaruy1QSU7GQ1wZHzUN84jMPhaeVmn57kt7U1Ebpz+Z0P5cDz0sCeq51nuNrZE84bDIMePdsUAAD+TuqPgf1vuedGJDjz4KtaiN+oAXUo2v/hJiRvukEkAM/0vWay27vIXCvY2NqPOv6n6YqMUX7pr7aq6BGZPl6yziGuyEBdCBKG3rLnrtsqZskYEv+Z+0QNixS+FzfgubLz01q4m/fIKpjgu76JLaf6bdYlUqMCDz5mMC2cPvMfsaH8Hj8Nx7t4TQKHd5VDD2Sf8Sp8y04S/aDZ3bYxTKkNaynHIkHAtCmvIKp2RXSHogz+U6jANVaSYAna2h7atREMwXe5Cl4lryPbGnatfYCkVB7UNlF6o3qvG8+U/vde0yH3BpfDZbWkXm97blUG+5NaW2TUpt6GOPkPjDpcRIdenmxtO64bZNFBrOgLzkV+Wgi/RD3wWapSb0/4fdZPtV+vUsL7ptVJPyE2fqOWsPQ9MBRE3MMsU5isjn2mxzEg6oZpMUpd/50O+5yA2sM8bAGnvT32DgHmzdNaE5DG7BHWMTKUsszYjjQKzGw/0pF/58YOwCve+FVEeOW/a6QLEJqn/2lZhU701vPP8/UlSH1wqK/zBR7/drorf0kw7htz/+zoRbTDuNL+gjG3nKH9DQmMZEhL5VQJG9uC1CeJJo97nnhgZ+VdWoe7XKIzfLd0LFyPxlz/v0TSZsLRX93SMyBaShdxmMlkc5Eeu7npYzzXdNRIHsBAtBfRPul2p3hjeuY+cTWrsLnxP/s5HHQWaUtIvVHOV6eM0mSb4lcajZ5fb+HXKhXGXkRO2BPVBbHznp5F3Ky+uOLkyWWX6wz+A1UCEjruyX3tnZATboZudXzbsxDis/ULosmkAlIb5epmfBxnP/gKwScfSEC5rge+Nk+rjGioY9qjyB3IPjxRGwBWXCSBgNyeVw/rB8agbPYjg+TSXgB3o9NqplhWB1q6Q+HkplAEdN0LlnFTHL2zF7TFsj8tGF8TECDCNjjPejRabxB05xI46EFVudkzL+x8W5r3G6sYMU8vKxFgoqWjiC4uX285nVYndbM/sZAwaCJV0xfOixxZA0crULHb4i22s9Jbl8JU+wUlfqYYTG3RK3wrv+08TMUezBT+8aFXPYQJLAhoX4kdQXY+koJtEKDGnqrmhtg35YR8SLGJJ8wD88uhBhjx2hWSFzC9aAcwO0F8lg1y+SCu8aUQQFQ7HX+SPTl4O64uQ5kdnfJ9DmUFvllAp/YjIc8pKcZ4bfAu35FlVrBqaIgwG+rJELjjwpc+pQ7loX0T/q8Qh7bGEOxM3H4jjlJ+4wCqwpbWhhvkY5xDhkcO16d8zIxuK2QpovbyC3Vhdi2S6oIHBGpI7DiyVvhh4e/7DQKe3n9QNAvaBN513nK5d88nuDpxJW/3h8lS88N5OjVQ7Gh+vx1uLtsgzFHCHGk6rHx2Ign9UKBzmNNKLl1yf2uNjxsqdmV+3gGTVlFfhos0BhgDFCkkaTJTIqbQHANLLE7RejC1GMr0gIfzSHKCW03g5uAtVqV2VpA5aY5+V7v6RxaKD0w7OlkfVrNDZ42tjciynW71yvEmwz/eLqAze5ZAkFAfYIlbpFkyqPwYsQNUi3zF3NQGgZLSM500c4MOHkxiPHEkAHO39QI/84Wm54uiwJUHAsAw39ifc7HBkP6p5/MkFr834JtpL+xDt5wAh636TTXw5qs/bqb+7necew8R1XUXe0rx9+O+rsaaQ1s8/k26lZ1cJMB6awTOpOGf8OgFvEE5KBAKtMS2SgYrBgEvwSe5TDtcaC5bto9838Rny9QhhSY0LaWZaOsTkggOEhZsraJRuT+ckCvornBiK3c53+xf+X5lWLfTIe3GfRSZ/9B78f6QGZVbPiNpQNKKKyYcvDCKvsnD62Tmtk3DKqLfIvhrL2ktE4hId7Pg0LUBVL4owAA= 1x, /Ice-Cream-Vite-Alexander/assets/fb-user2-2x-cypW2Wit.webp 2x"
+            alt="customer Emily"
+            width="85"
+            height="85"
+            loading="lazy"
+          />
+        </div>
+        <p class="fb-item-text">
+          I love eating popsicles on a hot day. Yours is always delicious. I recommend your cafe to
+          everyone I know.
+        </p>
+        <p class="fb-item-description">Sam, Los Angeles</p>
+      </li>
+      <li class="feedbacks-item">
+        <div class="fb-user-img-wrapper">
+          <img
+            srcset="data:image/webp;base64,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 1x, /Ice-Cream-Vite-Alexander/assets/fb-user3-2x-BgoWoqLm.webp 2x"
+            alt="customer Emily"
+            width="85"
+            height="85"
+            loading="lazy"
+          />
+        </div>
+        <p class="fb-item-text">
+          I love visiting your cafe. You prepare the most delicious ice cream in Los Angeles! In
+          addition, you have beautiful serving, cozy atmosphere and polite staff.
+        </p>
+        <p class="fb-item-description">Diana, Chicago</p>
+      </li>
+      <li class="feedbacks-item">
+        <div class="fb-user-img-wrapper">
+          <img
+            srcset="data:image/webp;base64,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 1x, /Ice-Cream-Vite-Alexander/assets/fb-user4-2x-CCvxeuki.webp 2x"
+            alt="customer Emily"
+            width="85"
+            height="85"
+            loading="lazy"
+          />
+        </div>
+        <p class="fb-item-text">
+          Every day we come to you with friends after classes in college. We love your ice cream and
+          casual atmosphere!
+        </p>
+        <p class="fb-item-description">Bryan, New-York</p>
+      </li>
+    </ul>
+    <div class="dots" role="tablist">
+      <button
+        class="dot-btn active"
+        role="tab"
+        aria-selected="true"
+        aria-label="Go to another comment"
+      >
+        <svg width="12" height="12">
+          <circle cx="6" cy="6" r="6" />
+        </svg>
+      </button>
+      <button class="dot-btn" role="tab" aria-label="Go to another comment">
+        <svg width="12" height="12">
+          <circle cx="6" cy="6" r="6" />
+        </svg>
+      </button>
+      <button class="dot-btn" role="tab" aria-label="Go to another comment">
+        <svg width="12" height="12">
+          <circle cx="6" cy="6" r="6" />
+        </svg>
+      </button>
+      <button class="dot-btn" role="tab" aria-label="Go to another comment">
+        <svg width="12" height="12">
+          <circle cx="6" cy="6" r="6" />
+        </svg>
+      </button>
+    </div>
+  </div>
+</section>
+
+
+      <div class="modal-overlay order-modal-overlay">
+  <div class="order-modal-container">
+    <button
+      class="modal-close-btn order-modal-close-btn"
+      type="button"
+      aria-label="Close modal window"
+    >
+      <svg class="modal-close-icon" width="16" height="16">
+        <use href="/Ice-Cream-Vite-Alexander/assets/sprite-zdbH9N6f.svg#icon-modal-close"></use>
+      </svg>
+    </button>
+    <h2 class="order-modal-title">Buy now</h2>
+    <ul class="order-modal-list">
+      <li class="order-modal-item">
+        <div class="order-img-decor order-img-decor-1"></div>
+        <div class="order-img-wrapper">
+          <img
+            srcset="/Ice-Cream-Vite-Alexander/assets/order-modal-img1-1x-CON4Sjfy.webp 1x, /Ice-Cream-Vite-Alexander/assets/order-modal-img1-2x-DveOsJKy.webp 2x"
+            alt="Colorful ice cream"
+          />
+        </div>
+        <div class="order-item-title-wrapper order-item-title-wrapper-1">
+          <h3 class="order-item-title">ice cream</h3>
+        </div>
+      </li>
+      <li class="order-modal-item">
+        <div class="order-img-decor order-img-decor-2"></div>
+        <div class="order-img-wrapper">
+          <img
+            srcset="/Ice-Cream-Vite-Alexander/assets/order-modal-img2-1x-vUbCDnem.webp 1x, /Ice-Cream-Vite-Alexander/assets/order-modal-img2-2x-DWgLl2Lw.webp 2x"
+            alt="A glass of ice coffee with toppings"
+          />
+        </div>
+        <div class="order-item-title-wrapper order-item-title-wrapper-2">
+          <h3 class="order-item-title">ice coffee</h3>
+        </div>
+      </li>
+      <li class="order-modal-item">
+        <div class="order-img-decor order-img-decor-3"></div>
+        <div class="order-img-wrapper">
+          <img
+            srcset="data:image/webp;base64,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 1x, /Ice-Cream-Vite-Alexander/assets/order-modal-img3-2x-WgTKFqwD.webp 2x"
+            alt="Milkshake with toppings"
+          />
+        </div>
+        <div class="order-item-title-wrapper order-item-title-wrapper-3">
+          <h3 class="order-item-title">milkshake</h3>
+        </div>
+      </li>
+    </ul>
+    <form class="modal-form">
+      <div class="modal-input-wrapper">
+        <label class="visually-hidden" for="order-name">Name</label>
+        <input
+          class="modal-input"
+          id="order-name"
+          name="name"
+          type="text"
+          placeholder="Name"
+          required
+          autocomplete="name"
+          aria-label="Name"
+        />
+        <label class="visually-hidden" for="order-phone">Phone</label>
+        <input
+          class="modal-input"
+          id="order-phone"
+          name="phone"
+          type="tel"
+          placeholder="Phone"
+          required
+          autocomplete="tel"
+          aria-label="Phone number"
+        />
+        <label class="visually-hidden" for="order-comment">Comment</label>
+        <textarea
+          class="modal-input modal-textarea"
+          id="order-comment"
+          name="comment"
+          rows="3"
+          placeholder="Comment"
+          autocomplete="off"
+          aria-label="Comment"
+        ></textarea>
+      </div>
+      <button class="button-primary modal-form-btn" type="submit">Submit</button>
+    </form>
+  </div>
+</div>
+
+      <div class="ingredients modal-overlay">
+  <div class="ingredients-modal">
+    <h2 class="product-title">Chocolate icecream</h2>
+    <button class="modal-close-btn ingr-btn-close" type="button" aria-label="Close modal window">
+      <svg class="modal-close-icon" width="16" height="16">
+        <use href="/Ice-Cream-Vite-Alexander/assets/sprite-zdbH9N6f.svg#icon-modal-close"></use>
+      </svg>
+    </button>
+
+    <picture class="ingr-product-img">
+      <source
+        srcset="/img/ingredients-modal-webp/ingr-modal-mob-1x.webp 1x, /img/ingredients-modal-webp/ingr-modal-mob-2x.webp 2x"
+      />
+      <img
+        src="/img/ingredients-modal-webp/ingr-modal-mob-1x.webp"
+        alt="ice cream"
+        loading="lazy"
+      />
+    </picture>
+    <div class="ingr-product-circle"></div>
+
+    <ul class="consist-list">
+      <li class="consist-item">
+        <div class="consist-circle">
+          <p class="consist-text">320</p>
+        </div>
+        <p class="consist-unit">kcal</p>
+      </li>
+      <li class="consist-item">
+        <div class="consist-circle">
+          <p class="consist-text">4g</p>
+        </div>
+        <p class="consist-unit">Prote...</p>
+      </li>
+      <li class="consist-item">
+        <div class="consist-circle">
+          <p class="consist-text">8,2g</p>
+        </div>
+        <p class="consist-unit">Fats</p>
+      </li>
+      <li class="consist-item">
+        <div class="consist-circle">
+          <p class="consist-text">40,4g</p>
+        </div>
+        <p class="consist-unit">Carbs</p>
+      </li>
+    </ul>
+    <h3 class="ingredients-title">Ingredients</h3>
+    <ul class="ingr-list">
+      <li class="ingr-item">
+        <p class="ingr-name">Milk</p>
+        <p class="ingr-quantity">100ml</p>
+      </li>
+      <li class="ingr-item">
+        <p class="ingr-name">Belgian chocolate</p>
+        <p class="ingr-quantity">20g</p>
+      </li>
+      <li class="ingr-item">
+        <p class="ingr-name">Cream</p>
+        <p class="ingr-quantity">150ml</p>
+      </li>
+      <li class="ingr-item">
+        <p class="ingr-name">Cocoa powder</p>
+        <p class="ingr-quantity">30g</p>
+      </li>
+      <li class="ingr-item">
+        <p class="ingr-name">Sugar</p>
+        <p class="ingr-quantity">40g</p>
+      </li>
+      <li class="ingr-item">
+        <p class="ingr-name">Vanilla sugar</p>
+        <p class="ingr-quantity">10g</p>
+      </li>
+    </ul>
+    <form class="modal-form">
+      <div class="modal-input-wrapper">
+        <label class="visually-hidden" for="ingr-name">Name</label>
+        <input
+          class="modal-input"
+          id="ingr-name"
+          name="name"
+          type="text"
+          placeholder="Name"
+          required
+          autocomplete="name"
+          aria-label="Name"
+        />
+        <label class="visually-hidden" for="ingr-phone">Phone</label>
+        <input
+          class="modal-input"
+          id="ingr-phone"
+          name="phone"
+          type="tel"
+          placeholder="Phone"
+          required
+          autocomplete="tel"
+          aria-label="Phone number"
+        />
+        <label class="visually-hidden" for="ingr-comment">Comment</label>
+        <textarea
+          class="modal-input modal-textarea"
+          id="ingr-comment"
+          name="comment"
+          rows="5"
+          placeholder="Comment"
+          autocomplete="off"
+          aria-label="Comment"
+        ></textarea>
+      </div>
+      <button class="button-primary modal-form-btn" type="submit">Submit</button>
+    </form>
+  </div>
+</div>
+
+      <div class="modal-overlay promo-modal-overlay">
+  <div class="promo-modal-container">
+    <button
+      class="modal-close-btn promo-modal-close-btn"
+      type="button"
+      aria-label="Close modal window"
+    >
+      <svg class="modal-close-icon" width="16" height="16">
+        <use href="/Ice-Cream-Vite-Alexander/assets/sprite-zdbH9N6f.svg#icon-modal-close"></use>
+      </svg>
+    </button>
+    <h2 class="promo-modal-title">How it’s made?</h2>
+    <iframe
+      class="promo-modal-iframe"
+      src="https://www.youtube.com/embed/bMVyNAZ8I08?si=idqUrNmslzCQU--J"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen
+    ></iframe>
+    <p class="promo-modal-text">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+      labore et Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+      incididunt ut labore et
+    </p>
+  </div>
+</div>
+
+      <div class="location modal-overlay">
+  <div class="location-modal">
+    <h2 class="location-title">Our Locations</h2>
+    <div class="thumb-map">
+      <iframe
+        src="https://www.google.com/maps/d/embed?mid=1De1VBDlsdpdgeRNJIj982FJTWC_ixuo&ehbc=2E312F&noprof=1"
+        loading="lazy"
+        class="location-map"
+      ></iframe>
+    </div>
+
+    <button class="open-map-btn button-primary" type="button">
+      <a
+        href="https://www.google.com/maps/d/embed?mid=1De1VBDlsdpdgeRNJIj982FJTWC_ixuo&ehbc=2E312F&noprof=1"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Open map</a
+      >
+    </button>
+
+    <button
+      class="modal-close-btn location-btn-close"
+      type="button"
+      aria-label="Close modal window"
+    >
+      <svg class="modal-close-icon" width="16" height="16">
+        <use href="/Ice-Cream-Vite-Alexander/assets/sprite-zdbH9N6f.svg#icon-modal-close"></use>
+      </svg>
+    </button>
+  </div>
+</div>
+
+      <div class="modal-overlay franchise-modal-overlay">
+  <div class="franchise-modal-container">
+    <button
+      class="modal-close-btn franchise-modal-close-btn"
+      type="button"
+      aria-label="Close modal window"
+    >
+      <svg class="modal-close-icon" width="16" height="16">
+        <use href="/Ice-Cream-Vite-Alexander/assets/sprite-zdbH9N6f.svg#icon-modal-close"></use>
+      </svg>
+    </button>
+    <h2 class="visually-hidden">Franchise Opportunities</h2>
+    <p class="franchise-modal-congrats">Thank you for your interest in owning an Ice Cream shop</p>
+    <p class="franchise-modal-description">
+      Due to the overwhelming volume of franchise requests we are not accepting new franchisee
+      applications at this time. Once the application process resumes, we will contact you for
+      further information. Please fill out the contact information below and we will reach out for
+      additional information. We appreciate your patience.
+    </p>
+    <form class="modal-form">
+      <div class="modal-input-wrapper">
+        <label class="visually-hidden" for="franchise-name">Name</label>
+        <input
+          class="modal-input"
+          id="franchise-name"
+          name="name"
+          type="text"
+          placeholder="Name"
+          required
+          autocomplete="name"
+          aria-label="Name"
+        />
+        <label class="visually-hidden" for="franchise-phone">Phone</label>
+        <input
+          class="modal-input"
+          id="franchise-phone"
+          name="phone"
+          type="tel"
+          placeholder="Phone"
+          required
+          autocomplete="tel"
+          aria-label="Phone number"
+        />
+        <label class="visually-hidden" for="franchise-email">Email</label>
+        <input
+          class="modal-input"
+          id="franchise-email"
+          name="email"
+          type="email"
+          placeholder="Email"
+          required
+          autocomplete="email"
+          aria-label="Email address"
+        />
+        <label class="visually-hidden" for="franchise-comment">Comment</label>
+        <textarea
+          class="modal-input modal-textarea"
+          id="franchise-comment"
+          name="comment"
+          id="comment"
+          rows="3"
+          placeholder="Comment"
+          autocomplete="off"
+          aria-label="Comment"
+        ></textarea>
+      </div>
+      <button class="button-primary modal-form-btn" type="submit">Submit</button>
+    </form>
+  </div>
+</div>
 
     </main>
 
     <footer class="footer">
-  <div class="container">
-    <p class="footer-desc">
-      Made with ✨ by
-      <a
-        class="footer-link"
-        href="https://goit.global/ua/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT team
-      </a>
-    </p>
+  <div class="container footer-container">
+    <h2 class="visually-hidden">Our location</h2>
+    <section class="footer-locations-section" id="contacts">
+      <ul class="footer-locations-list">
+        <li class="footer-locations-item">
+          <div class="footer-locations-wrapper">
+            <div class="footer-locations-name-wrapper">
+              <h3 class="footer-locations-title">CAFE</h3>
+              <p class="footer-locations-subtitle">Chicago</p>
+            </div>
+            <address class="footer-locations-address">
+              <ul class="footer-address-list">
+                <li class="footer-address-item">
+                  <a
+                    class="footer-address-link"
+                    href="https://maps.app.goo.gl/8PtExbVsh4NQoPss7"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    10340 Ridgeland Ave, Chicago Ridge, IL 60415, USA
+                  </a>
+                </li>
+              </ul>
+            </address>
+            <div class="footer-line-wrapper"></div>
+            <ul class="footer-working-hours-list">
+              <li>
+                <p class="footer-working-hours-text">
+                  Monday - Friday
+                  <br />
+                  <span class="footer-working-hours-span">06:00 AM - 10:00 PM</span>
+                </p>
+              </li>
+              <li>
+                <p class="footer-working-hours-text">
+                  Saturday - Sunday <br />
+                  <span class="footer-working-hours-span"> 08:00 AM - 16:00 PM </span>
+                </p>
+              </li>
+            </ul>
+            <div class="footer-line-wrapper"></div>
+            <address class="footer-contacts-address">
+              <p>
+                <a class="footer-contacts-address-link" href="tel:+61383766284"
+                  >+61(0) 383 766 284</a
+                >
+              </p>
+              <p>
+                <a class="footer-contacts-address-link" href="mailto:noreply@envato.com"
+                  >noreply@envato.com</a
+                >
+              </p>
+            </address>
+          </div>
+        </li>
+        <li class="footer-locations-item">
+          <div class="footer-locations-wrapper">
+            <div class="footer-locations-name-wrapper">
+              <h3 class="footer-locations-title footer-locations-title-large">FOODTRUCK</h3>
+              <p class="footer-locations-subtitle">Los Angeles</p>
+            </div>
+            <address class="footer-locations-address">
+              <ul class="footer-address-list">
+                <li class="footer-address-item">
+                  <a
+                    class="footer-address-link"
+                    href="https://maps.app.goo.gl/izzsYEawNVqUFEn37"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    1003 Manhattan Ave, Manhattan Beach, CA 90263, USA
+                  </a>
+                </li>
+              </ul>
+            </address>
+            <div class="footer-line-wrapper"></div>
+            <ul class="footer-working-hours-list">
+              <li>
+                <p class="footer-working-hours-text">
+                  Monday - Friday
+                  <br />
+                  <span class="footer-working-hours-span">06:00 AM - 10:00 PM</span>
+                </p>
+              </li>
+              <li>
+                <p class="footer-working-hours-text">
+                  Saturday - Sunday <br />
+                  <span class="footer-working-hours-span"> 08:00 AM - 16:00 PM </span>
+                </p>
+              </li>
+            </ul>
+            <div class="footer-line-wrapper"></div>
+            <address class="footer-contacts-address">
+              <p>
+                <a class="footer-contacts-address-link" href="tel:+61383766284"
+                  >+61(0) 383 766 284</a
+                >
+              </p>
+              <p>
+                <a class="footer-contacts-address-link" href="mailto:noreply@envato.com"
+                  >noreply@envato.com</a
+                >
+              </p>
+            </address>
+          </div>
+        </li>
+        <li class="footer-locations-item">
+          <div class="footer-locations-wrapper">
+            <div class="footer-locations-name-wrapper">
+              <h3 class="footer-locations-title">CAFE</h3>
+              <p class="footer-locations-subtitle">New York</p>
+            </div>
+            <address class="footer-locations-address">
+              <ul class="footer-address-list">
+                <li class="footer-address-item">
+                  <a
+                    class="footer-address-link"
+                    href="https://maps.app.goo.gl/YXyXAr2U9vZ6cirw9"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    726 Sterling Pl, Brooklyn, NY 11222, USA
+                  </a>
+                </li>
+              </ul>
+            </address>
+            <div class="footer-line-wrapper"></div>
+            <ul class="footer-working-hours-list">
+              <li>
+                <p class="footer-working-hours-text">
+                  Monday - Friday
+                  <br />
+                  <span class="footer-working-hours-span">06:00 AM - 10:00 PM</span>
+                </p>
+              </li>
+              <li>
+                <p class="footer-working-hours-text">
+                  Saturday - Sunday <br />
+                  <span class="footer-working-hours-span"> 08:00 AM - 16:00 PM </span>
+                </p>
+              </li>
+            </ul>
+            <div class="footer-line-wrapper"></div>
+            <address class="footer-contacts-address">
+              <p>
+                <a class="footer-contacts-address-link" href="tel:+61383766284"
+                  >+61(0) 383 766 284</a
+                >
+              </p>
+              <p>
+                <a class="footer-contacts-address-link" href="mailto:noreply@envato.com"
+                  >noreply@envato.com</a
+                >
+              </p>
+            </address>
+          </div>
+        </li>
+      </ul>
+    </section>
+    <div class="footer-info">
+      <div class="footer-button-wrapper">
+        <button
+          class="button-primary location-btn footer-button"
+          type="button"
+          id="open-locations-modal"
+        >
+          <span class="btn-text">Our Locations</span>
+          <svg class="btn-icon" width="12" height="12">
+            <use href="/Ice-Cream-Vite-Alexander/assets/sprite-zdbH9N6f.svg#icon-btn-chevron-right"></use>
+          </svg>
+        </button>
+        <button class="button-secondary footer-button" type="button" id="open-franchise-modal">
+          <span class="btn-text">Franchise</span>
+          <svg class="btn-icon" width="12" height="12">
+            <use href="/Ice-Cream-Vite-Alexander/assets/sprite-zdbH9N6f.svg#icon-btn-chevron-right"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="footer-slogan-social-wrapper">
+        <div class="footer-slogan">
+          <p class="footer-slogan-text">homemade ice cream made</p>
+          <p class="footer-slogan-text footer-slogan-text-large">with passion</p>
+        </div>
+        <div class="footer-social-wrapper">
+          <ul class="footer-social-list">
+            <li class="footer-social-item">
+              <a
+                class="footer-social-link"
+                href="https://github.com/tetiana-tkachuk/ice-cream-project"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Visit our GitHub page"
+              >
+                <svg class="footer-social-icon" width="18" height="18">
+                  <use href="/Ice-Cream-Vite-Alexander/assets/sprite-zdbH9N6f.svg#icon-github"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-social-item">
+              <a
+                class="footer-social-link"
+                href="tg://resolve?domain=babichdev"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Join our Telegram channel"
+              >
+                <svg class="footer-social-icon" width="18" height="18">
+                  <use href="/Ice-Cream-Vite-Alexander/assets/sprite-zdbH9N6f.svg#icon-telegram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-social-item">
+              <a
+                class="footer-social-link"
+                href="https://www.facebook.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Facebook page"
+              >
+                <svg class="footer-social-icon" width="18" height="18">
+                  <use href="/Ice-Cream-Vite-Alexander/assets/sprite-zdbH9N6f.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <div class="footer-social-contacts">
+            <address class="footer-social-contacts-address">
+              <p class="footer-contact-text">
+                Feel free to contact
+                <a class="footer-contact-tel-link" href="tel:+61383766284">+61 (0) 383 766 284</a>
+              </p>
+            </address>
+          </div>
+        </div>
+      </div>
+      <div class="footer-social-line-wrapper"></div>
+      <div class="footer-copyright-wrapper">
+        <p class="footer-copyright">&copy; 2022 - IceCream. All Rights Reserved.</p>
+      </div>
+    </div>
   </div>
 </footer>
 
