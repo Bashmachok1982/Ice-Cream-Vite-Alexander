@@ -1,0 +1,116 @@
+<div class="ingredients modal-overlay">
+  <div class="ingredients-modal">
+    <h2 class="product-title">Chocolate icecream</h2>
+    <button class="modal-close-btn ingr-btn-close" type="button" aria-label="Close modal window">
+      <svg class="modal-close-icon" width="16" height="16">
+        <use href="/img/sprite.svg#icon-modal-close"></use>
+      </svg>
+    </button>
+
+    <picture class="ingr-product-img">
+      <source
+        srcset="
+          /img/ingredients-modal-webp/ingr-modal-mob-1x.webp 1x,
+          /img/ingredients-modal-webp/ingr-modal-mob-2x.webp 2x
+        "
+      />
+      <img
+        src="/img/ingredients-modal-webp/ingr-modal-mob-1x.webp"
+        alt="ice cream"
+        loading="lazy"
+      />
+    </picture>
+    <div class="ingr-product-circle"></div>
+
+    <ul class="consist-list">
+      <li class="consist-item">
+        <div class="consist-circle">
+          <p class="consist-text">320</p>
+        </div>
+        <p class="consist-unit">kcal</p>
+      </li>
+      <li class="consist-item">
+        <div class="consist-circle">
+          <p class="consist-text">4g</p>
+        </div>
+        <p class="consist-unit">Prote...</p>
+      </li>
+      <li class="consist-item">
+        <div class="consist-circle">
+          <p class="consist-text">8,2g</p>
+        </div>
+        <p class="consist-unit">Fats</p>
+      </li>
+      <li class="consist-item">
+        <div class="consist-circle">
+          <p class="consist-text">40,4g</p>
+        </div>
+        <p class="consist-unit">Carbs</p>
+      </li>
+    </ul>
+    <h3 class="ingredients-title">Ingredients</h3>
+    <ul class="ingr-list">
+      <li class="ingr-item">
+        <p class="ingr-name">Milk</p>
+        <p class="ingr-quantity">100ml</p>
+      </li>
+      <li class="ingr-item">
+        <p class="ingr-name">Belgian chocolate</p>
+        <p class="ingr-quantity">20g</p>
+      </li>
+      <li class="ingr-item">
+        <p class="ingr-name">Cream</p>
+        <p class="ingr-quantity">150ml</p>
+      </li>
+      <li class="ingr-item">
+        <p class="ingr-name">Cocoa powder</p>
+        <p class="ingr-quantity">30g</p>
+      </li>
+      <li class="ingr-item">
+        <p class="ingr-name">Sugar</p>
+        <p class="ingr-quantity">40g</p>
+      </li>
+      <li class="ingr-item">
+        <p class="ingr-name">Vanilla sugar</p>
+        <p class="ingr-quantity">10g</p>
+      </li>
+    </ul>
+    <form class="modal-form">
+      <div class="modal-input-wrapper">
+        <label class="visually-hidden" for="ingr-name">Name</label>
+        <input
+          class="modal-input"
+          id="ingr-name"
+          name="name"
+          type="text"
+          placeholder="Name"
+          required
+          autocomplete="name"
+          aria-label="Name"
+        />
+        <label class="visually-hidden" for="ingr-phone">Phone</label>
+        <input
+          class="modal-input"
+          id="ingr-phone"
+          name="phone"
+          type="tel"
+          placeholder="Phone"
+          required
+          autocomplete="tel"
+          aria-label="Phone number"
+        />
+        <label class="visually-hidden" for="ingr-comment">Comment</label>
+        <textarea
+          class="modal-input modal-textarea"
+          id="ingr-comment"
+          name="comment"
+          rows="5"
+          placeholder="Comment"
+          autocomplete="off"
+          aria-label="Comment"
+        ></textarea>
+      </div>
+      <button class="button-primary modal-form-btn" type="submit">Submit</button>
+    </form>
+  </div>
+</div>
